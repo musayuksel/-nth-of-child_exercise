@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.5;
+}
+
+:root {
+  --Moderateviolet: hsl(263, 55%, 52%);
+  --Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --Verydarkblackishblue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+article {
+  border:1px solid black;
+}
+.section1 {
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-gap: 24px;
+  /* align-items: center;
+  justify-items: center; */
+  grid-template-areas: 
+  "article1 article1 article2 article3"
+  "article4 article5 article5 article3";
+}
+
+.article1{
+  grid-area: article1;
+}
+.article2{
+  grid-area: article2;
+}
+.article3{
+  grid-area: article3;
+}
+.article4{
+  grid-area: article4;
+}
+.article5{
+  grid-area: article5;
+}
+/* article1 will be purple background */
+.article1 {
+  background-color: var(--Moderateviolet);
+  color: #fff;
+}
+/* article2 will be darkgrayish blue background */
+.article2{
+  background-color: var(--Verydarkgrayishblue);
+  color: #fff;
+}
+/* article3 will be White background */
+.article3 {
+  background-color: var(--White);
+  color: #000;
+}
+/* article4 will be  Lightgray background*/
+.article4 {
+  background-color: var(--Lightgray);
+  color: #000;
+}
+/* article5 will be  Blackgrayishblue background*/
+.article5 {
+  background-color: var(--Verydarkblackishblue);
+  color: #fff;
+}
+/* choose with :nth-child() */
+.art1-heading, .art2-heading, .art3-heading {
+  background-color: rgba(30, 205, 218, 0.164);
+  text-align: center;
+}
+
+/* choose with nth-of-chil*/
+.art4-heading {
+  background-color: rgba(58, 35, 35, 0.767);
+  color: #fff;
+}
+/* choose with using article and p */
+.special { 
+  background-color: rgb(182, 9, 9);
+}
