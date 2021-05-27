@@ -32,7 +32,7 @@ article {
 .article1{
   grid-area: article1;
 }
-.article2{
+.article2{ 
   grid-area: article2;
 }
 .article3{
@@ -45,47 +45,59 @@ article {
   grid-area: article5;
 }
 /* article1 will be purple background */
-.article1 {
+.article1 {  
   background-color: var(--Moderateviolet);
   color: #fff;
 }
-/* article2 will be darkgrayish blue background */
-.article2{
+/* article2 will be darkgrayish blue background -use nth child*/
+.article2{  
   background-color: var(--Verydarkgrayishblue);
   color: #fff;
 }
-/* article3 will be White background */
-.article3 {
+/* article3 will be White background use nth chil */
+.article3 { 
   background-color: var(--White);
   color: #000;
 }
-/* article4 will be  Lightgray background*/
+/* article4 will be  Lightgray background* use nth of TYPE */
 .article4 {
   background-color: var(--Lightgray);
   color: #000;
 }
-/* article5 will be  Blackgrayishblue background*/
-.article5 {
+/* article5 will be  Blackgrayishblue background use last of type and last nth of type*/
+.article5 { 
   background-color: var(--Verydarkblackishblue);
   color: #fff;
 }
-/* choose with :nth-child() */
-.art1-heading, .art2-heading, .art3-heading {
-  background-color: rgba(30, 205, 218, 0.164);
+/* choose with child */
+.art1-heading, .art2-heading, .art3-heading { 
+  background-color: rgba(81, 255, 110, 0.534);
   text-align: center;
 }
 
 /* choose with nth-of-chil*/
-.art4-heading {
+.art4-heading { 
   background-color: rgba(58, 35, 35, 0.767);
   color: #fff;
 }
 /* choose with using article and p */
-.special { 
+.special {  
   background-color: rgb(182, 9, 9);
 }
+/* use + sellector */
+.art4-heading, .art5-heading{
+  color:red;
+}
 
-/* article + article {
-  background-color: yellow !important;
-} */
-ar÷
+
+/* **************ANSWERS*************** 
+line 48: article:first-child // article:first-of-type{
+line 53: article:nth-child(2){
+line 58: article:nth-child(3){
+line 63:  article:nth-of-type(4){
+line 68: article:last-of-type{ OR  article:nth-last-of-type(1){
+line 73: h2:first-child{
+line 79: article h2:nth-child(2){
+line 84: section article:nth-child(3) p:nth-last-child(2){
+line 88: article p+h2{
+*/
