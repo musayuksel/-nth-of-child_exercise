@@ -90,6 +90,15 @@ article {
 }
 
 
+
+
+
+@media screen and (max-width:1000px) {
+  html {
+    font-size: 50%;
+  }
+  
+}
 /* **************ANSWERS*************** 
 line 48: article:first-child // article:first-of-type{
 line 53: article:nth-child(2){
